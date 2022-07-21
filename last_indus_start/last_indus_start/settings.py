@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'last_indus_start.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'daun-indus-db',
-        'USER': 'postgres',
-        'PASSWORD': '36ehetoh',
+        'NAME': %DBNAME%,
+        'USER': %USERNAME%,
+        'PASSWORD': %YOURPASSWORD%,
         'HOST': 'localhost'
     }
 }
